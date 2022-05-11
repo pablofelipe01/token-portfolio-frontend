@@ -1,25 +1,28 @@
-import React from 'react'
-import { BsTwitter, BsInstagram } from 'react-icons/bs'
-import { FaFacebook } from 'react-icons/fa'
+import React, { useState }from 'react'
+import { BsTwitter,  BsLinkedin } from 'react-icons/bs'
+
 
 const SocialMedia = () => {
+
+    const [clickSocial, setClickSocial] = useState(false)
+
+   
   return (
     <div className="app__social">
         
-        <div>
-            <BsTwitter />
-        </div>
+        <a href='https://twitter.com/tokensolutions' onClick={() => setClickSocial(false)}>
+            <BsTwitter  />
+        </a>
 
-        <div>
-            <BsInstagram  />
-        </div>
+        <a href='https://www.linkedin.com/in/pablo-f-acebedo/' onClick={() => setClickSocial(false)}>
+            <BsLinkedin  />
+        </a>
 
-        <div>
-            <FaFacebook />
-        </div>
+       
         
      </div>
   )
 }
 
 export default SocialMedia
+

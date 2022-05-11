@@ -27,7 +27,7 @@ const Skills = () => {
        setSkills(data)
        
      })
-   }, [])
+  }, [])
 
 
 
